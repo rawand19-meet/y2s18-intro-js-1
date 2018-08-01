@@ -9,14 +9,34 @@
     <h1>Guessing Game</h1>
 
     <script>
+    	
 /* STARTING CODE */
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
 }
 
 var randomInt = getRandomInt(1, 100);
-/* END STARTING CODE */
+ var guessnum=prompt("guess a number?");
 
+ while(guessnum !=randomInt){
+
+
+
+ if (guessnum>randomInt){
+ guessnum =prompt("you guessed too high!");
+
+ }
+ else if(guessnum<randomInt){
+ guessnum = prompt("you guessed too low!");
+
+ }
+ else{}
+
+
+}
+document.write("you get the right answer!!!!!");
+
+ 
 // your code goes under here
 
     </script>
